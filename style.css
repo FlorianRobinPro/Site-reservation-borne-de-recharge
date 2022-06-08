@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #202020;
+}
+
+main{
+    display: flex;
+}
+
+.main-login{
+    /* largeur et longueur du background */
+    width: 100vw;
+    height: 100vh;
+    /* couleur du background */
+    background: #202020;
+    /* permet rendre les éléments flexible */
+    display: flex;
+    /* centrer les éléments */
+    justify-content: center; 
+}
+
+.left-login{
+    /* fait un espace de 120px entre le haut de la 
+    page et les éléments qui compoe le 'left-login'*/
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* met le texte au dessus de l'image */
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    /* change la couleur du texte */
+    color: #0BB4EA;
+}
+
+.voiture{
+    /* taille ainsi que positionnement 
+    de l'image d ela voiture */
+    margin-top: -160px;
+    width: 35vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    /* taille du cadre dans lequel
+    le formulaire ce situe*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Élargir les bordure pour pas 
+    qu'elles ne soit collé aux input  */
+    padding: 30px 35px;
+    background: #373638;
+    /* Arrondir les bordures */
+    border-radius: 20px;
+    /* mettre une ombre derrière le cadre */
+    box-shadow: 0px 10px 35px -3px #0B8BEA;
+}
+
+.card-login > h1 {
+    color: #0BB4EA;
+    /* graisser le texte */
+    font-weight: 800;
+    /* raprocher le texte de la bordure */
+    margin: 0;
+    /* mettre le texte en majuscule
+    et le souligner */
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #202020;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color:#f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffffde;
+}
+
+.btn-login{
+    width: 100%; 
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #201b2c;
+    background: #0BB4EA;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #0B8BEA;
+}
+
+#submit_underline{
+    text-decoration: underline;
+}
+
+nav{
+    height: 100px;
+    color: whitesmoke;
+    list-style: none;
+    text-align: left;
+    background-color:#202020;
+	display: flex;
+    justify-content: space-around; /* permet de mettre le nav de l'autre coté */
+    margin: auto;
+    text-align: center;
+    border-bottom: 3px solid #0B8BEA;
+    border-radius: 30px;
+    box-shadow: 0px 10px 15px -12px #0B8BEA;
+}
+
+.avatar{
+    width: 170px;
+    margin-top: -50px;
+}
+
+
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    width: 150px;
+    border-radius: 20px;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover{
+    z-index: 30000;
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+.logout{
+    position: absolute;
+    margin-left: 1400px;
+    top: 0;
+}
+
+.navtxt{
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 410px;
+    text-transform: uppercase;
+}
+
+  .error{
+    color: #CCC;
+    text-align: center;
+  }
+
+.error404{
+    text-align:center;
+    margin:auto;
+    width: 750px;
+    display: flex;
+
+}
+
+
+
+table{
+    color:black;
+    table-layout: fixed;
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+td{
+    cursor: pointer;
+    height: 120px;
+    text-align: center;
+    border:1px solid black;
+    background: whitesmoke;
+}
+
+#vide{
+    background: whitesmoke;
+}
+
+#creneau{
+    /* couleur des cases */
+    background: #0B8BEA;
+    /* enlever le soulignage d'un lien */
+    text-decoration: none;
+}
+
+#tabsemaine{
+    display: none;
+}
+
+#reserver{
+    color: white;
+}
+
+#creneaumodif{
+    background: green;
+    text-decoration: none;
+}
+
